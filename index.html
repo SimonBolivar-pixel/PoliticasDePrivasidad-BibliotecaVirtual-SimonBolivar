@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Política de Privacidad — Biblioteca Virtual ITSB</title>
+<style>
+:root{
+  --bg:#f6f7f9; --surface:#ffffff; --ink:#1d2733; --muted:#5b6775; --line:#d9dee5;
+  --accent:#1f5f7a; --accent-soft:#e3eff4; --ph-bg:#fff3c4; --ph-ink:#6b4f00;
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    --bg:#12171d; --surface:#1a212a; --ink:#e6eaf0; --muted:#98a3b1; --line:#2b3541;
+    --accent:#6fb8d4; --accent-soft:#1f3340; --ph-bg:#4a3b0a; --ph-ink:#f3da8b;
+  }
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:1.5rem}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:Georgia,"Times New Roman",serif;line-height:1.7;font-size:1.0625rem}
+a{color:var(--accent)}
+:focus-visible{outline:3px solid var(--accent);outline-offset:2px}
+.wrap{max-width:1080px;margin:0 auto;padding:2rem 1.25rem 4rem;display:grid;grid-template-columns:240px minmax(0,1fr);gap:2.5rem}
+header.top{grid-column:1/-1;border-bottom:3px solid var(--accent);padding-bottom:1.25rem}
+header.top .inst{font-family:system-ui,-apple-system,"Segoe UI",sans-serif;color:var(--accent);font-weight:600;margin:0 0 .25rem;font-size:.95rem}
+header.top h1{font-family:system-ui,-apple-system,"Segoe UI",sans-serif;font-size:clamp(1.7rem,4vw,2.5rem);line-height:1.15;margin:0 0 1rem}
+dl.meta{display:grid;grid-template-columns:max-content 1fr;gap:.25rem 1rem;margin:0;font-size:.95rem}
+dl.meta dt{color:var(--muted);font-family:system-ui,sans-serif}
+dl.meta dd{margin:0}
+nav.toc{position:sticky;top:1.5rem;align-self:start;font-family:system-ui,-apple-system,"Segoe UI",sans-serif;font-size:.9rem;max-height:calc(100vh - 3rem);overflow:auto}
+nav.toc p{margin:0 0 .5rem;font-weight:600}
+nav.toc ol{margin:0;padding:0;list-style:none;border-left:2px solid var(--line)}
+nav.toc a{display:block;padding:.3rem .75rem;text-decoration:none;color:var(--muted)}
+nav.toc a:hover{color:var(--accent);background:var(--accent-soft)}
+nav.toc .other{margin-top:1rem;padding-top:.75rem;border-top:1px solid var(--line)}
+main{background:var(--surface);border:1px solid var(--line);border-radius:6px;padding:clamp(1.25rem,4vw,2.75rem)}
+main h2{font-family:system-ui,-apple-system,"Segoe UI",sans-serif;font-size:1.3rem;margin:2.5rem 0 .75rem;padding-top:1.5rem;border-top:1px solid var(--line)}
+main h2:first-of-type{margin-top:0;padding-top:0;border-top:0}
+main h3{font-family:system-ui,-apple-system,"Segoe UI",sans-serif;font-size:1.05rem;margin:1.5rem 0 .5rem;color:var(--accent)}
+main p{margin:0 0 1rem;max-width:72ch}
+main ul{margin:0 0 1rem;padding-left:1.4rem;max-width:72ch}
+main li{margin-bottom:.35rem}
+.ph{background:var(--ph-bg);color:var(--ph-ink);padding:0 .3em;border-radius:3px;font-family:system-ui,sans-serif;font-size:.92em}
+.contact{background:var(--accent-soft);border-left:4px solid var(--accent);padding:1rem 1.25rem;border-radius:0 6px 6px 0;max-width:72ch}
+.contact p{margin:0 0 .25rem}
+footer{grid-column:1/-1;text-align:center;color:var(--muted);font-family:system-ui,sans-serif;font-size:.85rem}
+@media (max-width:820px){
+  .wrap{grid-template-columns:1fr;gap:1.25rem}
+  nav.toc{position:static;max-height:none}
+  nav.toc ol{columns:1}
+  dl.meta{grid-template-columns:1fr}
+  dl.meta dt{margin-top:.5rem}
+}
+@media print{
+  body{background:#fff;color:#000}
+  nav.toc{display:none}
+  .wrap{display:block;padding:0}
+  main{border:0;padding:0}
+  .ph{background:none;color:#000}
+}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<header class="top">
+  <p class="inst">Biblioteca Virtual · Instituto Tecnológico Simón Bolívar</p>
+  <h1>Política de Privacidad</h1>
+  <dl class="meta">
+    <dt>Fecha de elaboración</dt><dd>23 de octubre de 2026</dd>
+    <dt>Correo de contacto y privacidad</dt><dd><a href="mailto:eapaza@itsb.edu.bo">eapaza@itsb.edu.bo</a></dd>
+    <dt>Canal adicional de contacto</dt><dd>+591 76713856</dd>
+  </dl>
+</header>
+
+<nav class="toc" aria-label="Contenido">
+  <p>Contenido</p>
+  <ol>
+    <li><a href="#s1">1. Quién es responsable</a></li>
+    <li><a href="#s2">2. A quién y a qué se aplica</a></li>
+    <li><a href="#s3">3. Información que puede recopilarse</a></li>
+    <li><a href="#s4">4. Para qué se utiliza</a></li>
+    <li><a href="#s5">5. Base y carácter del tratamiento</a></li>
+    <li><a href="#s6">6. Quién puede ver la información</a></li>
+    <li><a href="#s7">7. Proveedores y servicios externos</a></li>
+    <li><a href="#s8">8. Sesión y almacenamiento local</a></li>
+    <li><a href="#s9">9. Conservación y eliminación</a></li>
+    <li><a href="#s10">10. Seguridad</a></li>
+    <li><a href="#s11">11. Derechos y solicitudes</a></li>
+    <li><a href="#s12">12. Personas menores de edad</a></li>
+    <li><a href="#s13">13. Cambios a esta Política</a></li>
+    <li><a href="#s14">14. Contacto</a></li>
+  </ol>
+  <div class="other"><a href="condiciones-de-servicio.html">Ver Condiciones de Servicio</a></div>
+</nav>
+
+<main>
+
+<h2 id="s1">1. Quién es responsable</h2>
+<p>La Biblioteca Virtual es un servicio educativo asociado al Instituto Tecnológico Simón Bolívar, en El Alto, Bolivia. Para efectos de este documento, el responsable del servicio es:</p>
+<div class="contact">
+  <p><strong>Correo de privacidad:</strong> <a href="mailto:eapaza@itsb.edu.bo">eapaza@itsb.edu.bo</a></p>
+  <p><strong>Celular:</strong> +591 76713856</p>
+</div>
+<p style="margin-top:1rem">El responsable deberá confirmar quién determina los fines y medios del tratamiento de los datos, quién atiende solicitudes de usuarios y quién está autorizado para administrar las cuentas y el contenido.</p>
+<p>En este documento, “Instituto”, “Biblioteca Virtual”, “nosotros” o “nuestro” se refiere al responsable que se identifique en los datos anteriores. “Usuario” se refiere a la persona que accede a la aplicación, inicia sesión o utiliza sus funciones.</p>
+
+<h2 id="s2">2. A quién y a qué se aplica</h2>
+<p>Esta Política describe, en términos generales, el tratamiento de información relacionado con el acceso y uso de la Biblioteca Virtual, incluida la autenticación, la consulta del catálogo, la publicación y revisión de documentos, y la participación mediante comentarios o calificaciones.</p>
+<p>La aplicación está diseñada para una comunidad educativa y actualmente utiliza inicio de sesión con Google y controles de cuenta vinculados a direcciones de correo. La configuración observada incluye una restricción de dominio Gmail; la institución debe confirmar si esta condición es intencional, si está vigente en el servicio desplegado y qué comunidad de usuarios está autorizada.</p>
+<p>Esta Política no rige los servicios externos que tengan sus propios avisos de privacidad, como Google, WhatsApp, proveedores de infraestructura, alojamiento o redes de distribución de contenido. Esos servicios pueden tratar información de acuerdo con sus propias condiciones.</p>
+
+<h2 id="s3">3. Información que puede recopilarse</h2>
+<p>Según las funciones y la configuración actuales, la Biblioteca Virtual puede tratar las siguientes categorías de información:</p>
+
+<h3>3.1. Datos de cuenta y perfil</h3>
+<ul>
+  <li>Dirección de correo electrónico asociada a la cuenta.</li>
+  <li>Nombre asociado al perfil. En el registro con Google, este nombre puede proceder de la información de perfil que Google entrega a la aplicación.</li>
+  <li>Identificador interno de la cuenta.</li>
+  <li>Rol dentro de la aplicación, como estudiante, docente o administrador.</li>
+  <li>Fecha de creación del perfil, cuando esté disponible.</li>
+</ul>
+
+<h3>3.2. Información de proyectos y libros</h3>
+<p>Cuando se registra contenido, pueden almacenarse:</p>
+<ul>
+  <li>Título.</li>
+  <li>Nombre del autor que se introduce en el formulario.</li>
+  <li>Año.</li>
+  <li>Programa o carrera, como Autotrónica o Mecánica automotriz.</li>
+  <li>Tipo de contenido: proyecto o libro.</li>
+  <li>Estado de revisión, que puede ser pendiente, aprobado o rechazado.</li>
+  <li>Identificador y ubicación técnica del archivo PDF.</li>
+  <li>Cuenta que cargó el contenido.</li>
+  <li>Fecha de creación del registro, cuando esté disponible.</li>
+</ul>
+<p>La aplicación permite consultar el catálogo y filtrar el contenido, por ejemplo, por título, autor, año, carrera y tipo. El contenido aprobado puede mostrarse a otros usuarios autenticados conforme a los permisos y a la configuración vigente.</p>
+
+<h3>3.3. Comentarios y calificaciones</h3>
+<p>En proyectos, ciertos roles autorizados pueden dejar comentarios y calificaciones. Los comentarios pueden incluir el nombre asociado al perfil, la fecha y el texto ingresado. La aplicación limita la longitud del comentario a 2.000 caracteres. Las calificaciones se expresan en una escala de 1 a 5 y se asocian al proyecto y a la cuenta que las emite.</p>
+<p>No incluyas en comentarios información sensible, contraseñas, datos de contacto personales ni información de terceros que no sea necesaria.</p>
+
+<h3>3.4. Archivos que se cargan</h3>
+<p>Los usuarios autorizados pueden cargar documentos PDF relacionados con proyectos o libros. La aplicación observada valida el tipo PDF y establece un máximo técnico de carga de 100 MB por archivo en la carga individual. Los administradores también cuentan con una función de carga masiva mediante una hoja de cálculo y archivos PDF.</p>
+<p>Los PDF y las hojas de cálculo pueden contener datos personales o información de terceros, incluso dentro de su texto, imágenes, anexos o metadatos. Quien los carga debe comprobar que está autorizado a compartirlos y que ha eliminado datos innecesarios o confidenciales.</p>
+
+<h3>3.5. Datos técnicos</h3>
+<p>Al utilizar el servicio, los proveedores de infraestructura y el navegador pueden procesar datos técnicos necesarios para entregar la aplicación, proteger las cuentas, transmitir los documentos y resolver errores. Dependiendo de sus configuraciones, estos datos pueden incluir dirección IP, información del navegador o dispositivo, solicitudes realizadas, fechas y registros técnicos de acceso.</p>
+<p>La revisión del código no permite determinar qué registros conservan efectivamente todos los proveedores ni durante cuánto tiempo. El responsable debe confirmar esos aspectos con los proveedores y describirlos con precisión antes de publicar una versión definitiva.</p>
+
+<h2 id="s4">4. Para qué se utiliza la información</h2>
+<p>La información podrá utilizarse, según corresponda, para:</p>
+<ul>
+  <li>Crear, autenticar y administrar cuentas.</li>
+  <li>Identificar el perfil y aplicar los permisos correspondientes a cada rol.</li>
+  <li>Mostrar el catálogo y permitir la búsqueda de proyectos y libros.</li>
+  <li>Recibir, almacenar, visualizar y revisar los documentos cargados.</li>
+  <li>Marcar envíos como pendientes, aprobados o rechazados y permitir su administración.</li>
+  <li>Mostrar comentarios y calificaciones asociados a proyectos.</li>
+  <li>Mantener la seguridad, disponibilidad e integridad del servicio.</li>
+  <li>Atender consultas, solicitudes o incidencias enviadas al Instituto.</li>
+  <li>Cumplir obligaciones institucionales o legales que resulten aplicables.</li>
+</ul>
+<p>No se deben utilizar los datos para fines incompatibles con los anteriores sin informar al usuario y, cuando sea necesario, obtener la autorización correspondiente.</p>
+
+<h2 id="s5">5. Base y carácter del tratamiento</h2>
+<p>El uso de algunas funciones requiere una cuenta autenticada. Al registrarse o iniciar sesión, el usuario facilita la información necesaria para habilitar el servicio. La institución deberá determinar y documentar la base jurídica apropiada para cada finalidad conforme a la normativa aplicable en Bolivia, la relación educativa con el usuario y, cuando corresponda, los requisitos de consentimiento.</p>
+<p>La aceptación de esta Política no debe interpretarse como autorización ilimitada para cualquier uso de datos. Cuando una finalidad requiera una autorización específica, esta deberá solicitarse de manera clara y separada.</p>
+
+<h2 id="s6">6. Quién puede ver la información</h2>
+<p>El acceso depende de los roles y permisos configurados en la aplicación:</p>
+<ul>
+  <li>Los usuarios autenticados pueden acceder al contenido que esté aprobado y habilitado para consulta.</li>
+  <li>La persona que subió un contenido puede tener acceso a su propio envío mientras esté pendiente o no aprobado.</li>
+  <li>Los administradores pueden gestionar usuarios, roles, contenido y decisiones de aprobación.</li>
+  <li>Los docentes pueden disponer de funciones de contribución, comentarios o calificación conforme a la configuración aplicada.</li>
+  <li>El personal técnico estrictamente autorizado podría acceder a información cuando sea necesario para operar, proteger o mantener el servicio.</li>
+</ul>
+<p>Los comentarios y calificaciones de un proyecto pueden ser visibles para los usuarios autorizados que consulten ese proyecto. El usuario debe considerar que la publicación de contenido aprobado, comentarios o calificaciones puede hacer que estos sean visibles a otros miembros autenticados de la comunidad.</p>
+<p>Los permisos concretos dependen de la configuración desplegada y pueden cambiar. La institución debe comprobar periódicamente que la aplicación y sus políticas de base de datos coinciden con las reglas descritas aquí.</p>
+
+<h2 id="s7">7. Proveedores y servicios externos</h2>
+<p>La arquitectura observada integra servicios de terceros para distintas funciones. Entre ellos se encuentran:</p>
+<ul>
+  <li><strong>Base de datos</strong>, utilizado por la aplicación para autenticación y almacenamiento de datos.</li>
+  <li><strong>Servicio de Nube</strong>, utilizado en la configuración observada para servir la aplicación o procesar solicitudes y almacenar archivos.</li>
+  <li><strong>Google</strong>, cuando el usuario elige autenticarse con su cuenta.</li>
+  <li>Bibliotecas distribuidas por servicios externos de CDN para funciones de visualización de PDF y hojas de cálculo.</li>
+  <li><strong>WhatsApp</strong>, disponible como enlace externo de contacto. Al abrirlo, el usuario pasa a un servicio independiente y decide qué información enviar.</li>
+</ul>
+<p>La lista anterior se basa en la configuración del proyecto y debe confirmarse frente a la versión efectivamente publicada. Cada proveedor puede procesar información conforme a sus propias condiciones, actuar desde distintos países y aplicar sus propios mecanismos de seguridad y conservación. El responsable debe mantener una lista actualizada de proveedores, revisar sus condiciones y determinar si existen transferencias internacionales de información.</p>
+<p>La Biblioteca Virtual no controla las prácticas de privacidad de esos terceros. Antes de utilizar sus servicios, el usuario puede consultar los avisos de privacidad correspondientes.</p>
+
+<h2 id="s8">8. Sesión, almacenamiento local y tecnologías similares</h2>
+<p>La autenticación puede requerir que el navegador conserve información técnica de la sesión para mantener al usuario conectado y realizar solicitudes autenticadas. El navegador también puede conservar temporalmente datos de funcionamiento.</p>
+<p>No se identificaron en el código revisado funciones propias de publicidad conductual o analítica. Sin embargo, la revisión del código no permite confirmar todas las tecnologías que puedan utilizar los proveedores de alojamiento, autenticación o distribución. Para información completa sobre cookies, almacenamiento local, registros y tecnologías equivalentes, el responsable debe verificar la configuración desplegada y la documentación de los proveedores.</p>
+<p>El usuario puede cerrar su sesión desde la aplicación y administrar los datos de su navegador. Borrar esos datos puede cerrar la sesión o afectar el funcionamiento del servicio.</p>
+
+<h2 id="s9">9. Conservación y eliminación</h2>
+<p>La institución conservará la información solo durante el tiempo necesario para los fines educativos, administrativos, de seguridad y cumplimiento que determine, de acuerdo con sus reglas institucionales y las obligaciones aplicables.</p>
+<p>La aplicación contiene funciones para eliminar determinados comentarios y permite a un administrador borrar registros de contenido; la forma en que se gestionan copias de seguridad, registros técnicos, perfiles y archivos debe confirmarse con los proveedores. La eliminación de un registro visible no garantiza, por sí sola, la eliminación inmediata de copias de seguridad o registros retenidos por un proveedor.</p>
+<p>El responsable debe completar y publicar plazos o criterios concretos para:</p>
+<ul>
+  <li>Cuentas inactivas o solicitudes de cierre.</li>
+  <li>Proyectos y libros aprobados, rechazados o pendientes.</li>
+  <li>Comentarios y calificaciones.</li>
+  <li>Archivos PDF y copias de respaldo.</li>
+  <li>Registros técnicos de seguridad.</li>
+  <li>Información que deba conservarse por razones académicas, administrativas o legales.</li>
+</ul>
+
+<h2 id="s10">10. Seguridad</h2>
+<p>Se aplican controles técnicos y organizativos destinados a proteger las cuentas, los registros y los documentos. La aplicación observada usa sesiones autenticadas, roles y permisos de acceso para varias operaciones. Ningún sistema conectado a Internet puede garantizar seguridad absoluta; por ello, no se promete que la información esté libre de todo riesgo.</p>
+<p>Los usuarios deben mantener la confidencialidad de sus credenciales, utilizar dispositivos seguros, cerrar su sesión al terminar y avisar al Instituto si sospechan que una cuenta fue utilizada sin autorización.</p>
+<p>Si ocurre un incidente que afecte información personal, el Instituto evaluará las medidas de contención, investigación y comunicación que correspondan conforme a la normativa y a sus procedimientos.</p>
+
+<h2 id="s11">11. Derechos y solicitudes</h2>
+<p>El usuario puede solicitar al Instituto, sujeto a la normativa aplicable y a la verificación de identidad:</p>
+<ul>
+  <li>Confirmación sobre el tratamiento de sus datos.</li>
+  <li>Acceso a la información vinculada a su cuenta.</li>
+  <li>Corrección de datos inexactos.</li>
+  <li>Eliminación o limitación del tratamiento cuando corresponda.</li>
+  <li>Información sobre proveedores o finalidades relevantes.</li>
+  <li>Revisión de una decisión relacionada con su cuenta o contenido.</li>
+</ul>
+<p>Para ejercer estos derechos, escribir a <strong>eapaza@itsb.edu.bo</strong> con el asunto “Solicitud de privacidad”. La solicitud debe indicar el correo de la cuenta, describir claramente lo que se requiere y no incluir contraseñas. El Instituto podrá solicitar información razonable para verificar la identidad y evitar divulgar datos a una persona no autorizada.</p>
+<p>Si una solicitud no puede atenderse, se explicarán los motivos y las opciones disponibles conforme a la normativa aplicable.</p>
+
+<h2 id="s12">12. Personas menores de edad</h2>
+<p>La aplicación está vinculada a un entorno educativo y podría ser utilizada por estudiantes menores de edad. El Instituto debe determinar la edad mínima de uso, las reglas de autorización y las medidas de información aplicables a estudiantes menores, sus madres, padres o representantes legales.</p>
+<p>Si eres menor de edad, utiliza el servicio de acuerdo con las reglas de tu institución y pide orientación a una persona responsable. No cargues datos personales sensibles propios o de otras personas en los documentos o comentarios.</p>
+
+<h2 id="s13">13. Cambios a esta Política</h2>
+<p>El Instituto puede actualizar esta Política si cambia la aplicación, la normativa o la forma de tratar la información. Se indicará la fecha de actualización y, cuando un cambio sea relevante, se comunicará por los medios institucionales o dentro del servicio.</p>
+<p>La versión vigente deberá estar disponible en un lugar accesible. Si un cambio requiere una nueva autorización, esta se solicitará antes de aplicar el tratamiento correspondiente.</p>
+
+<h2 id="s14">14. Contacto</h2>
+<p>Consultas, solicitudes de privacidad o reportes de seguridad:</p>
+<div class="contact">
+  <p><strong>Correo:</strong> <a href="mailto:eapaza@itsb.edu.bo">eapaza@itsb.edu.bo</a></p>
+  <p><strong>Celular:</strong> +591 76713856</p>
+</div>
+
+</main>
+
+<footer>Biblioteca Virtual · Instituto Tecnológico Simón Bolívar · El Alto, Bolivia</footer>
+</div>
+</body>
+</html>
